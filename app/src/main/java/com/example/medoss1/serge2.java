@@ -5,8 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class serge2 extends AppCompatActivity {
+
+
+    Button btnSerge21;
+  //Button btnSerge22;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +21,12 @@ public class serge2 extends AppCompatActivity {
     }
 
     private void clicFrame(){
-        btnSerge1.setOnClickListener(new View.OnClickListener() { // Gestion du clic avec le listener
+
+        btnSerge21.setOnClickListener(new View.OnClickListener() { // Gestion du clic avec le listener
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity_serge2.this, activity_serge3.class);
+                Intent intent = new Intent(serge2.this, serge3.class);
                 startActivity(intent);
             }
         });
-}
+}}
