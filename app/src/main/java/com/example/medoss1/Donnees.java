@@ -1,16 +1,22 @@
 package com.example.medoss1;
 
-public class Données {
+public class Donnees {
 
     String id, nom, prenom, codeTradP, categorie, adresseComplete,
             codePostal, specialite, mail;
 
 
-    public Données() {
+    public Donnees() {
 
     }
 
-    public Données(String id, String nom, String prenom,
+    public Donnees(String id, String nom, String prenom) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+    public Donnees(String id, String nom, String prenom,
                    String codeTradP, String categorie, String
                    adresseComplete, String codePostal, String
                    specialite, String mail) {
