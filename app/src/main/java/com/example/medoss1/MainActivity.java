@@ -16,6 +16,8 @@ import com.example.medoss1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     private ActivityMainBinding binding;
 
     @Override
