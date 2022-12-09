@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextCode"
+        android:id="@+id/editTextCodeTradiP"
         android:layout_width="150dp"
         android:layout_height="44dp"
         android:layout_marginStart="4dp"
@@ -67,15 +67,15 @@
         android:ems="10"
         android:hint="Catégorie*"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextCode"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCodeTradiP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="@+id/editTextPrenom"
-        app:layout_constraintTop_toTopOf="@+id/editTextCode"
+        app:layout_constraintTop_toTopOf="@+id/editTextCodeTradiP"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextAdresse"
+        android:id="@+id/editTextAdresseComplete"
         android:layout_width="345dp"
         android:layout_height="42dp"
         android:layout_marginTop="44dp"
@@ -84,11 +84,11 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/editTextCategorie"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextCode"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCode" />
+        app:layout_constraintStart_toStartOf="@+id/editTextCodeTradiP"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodeTradiP" />
 
     <EditText
-        android:id="@+id/editTextAdresseMail"
+        android:id="@+id/editTextMail"
         android:layout_width="362dp"
         android:layout_height="36dp"
         android:layout_marginStart="4dp"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextSpecialite" />
 
     <EditText
-        android:id="@+id/editTextCodePost"
+        android:id="@+id/editTextCodePostal"
         android:layout_width="207dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -108,8 +108,8 @@
         android:ems="10"
         android:hint="Code Postal Centre*"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextAdresse"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAdresse" />
+        app:layout_constraintStart_toStartOf="@+id/editTextAdresseComplete"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdresseComplete" />
 
     <EditText
         android:id="@+id/editTextSpecialite"
@@ -119,10 +119,10 @@
         android:ems="10"
         android:hint="Votre Spécialité*"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextCodePost"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCodePostal"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextCodePost"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCodePost" />
+        app:layout_constraintStart_toStartOf="@+id/editTextCodePostal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodePostal" />
 
     <TextView
         android:id="@+id/textView2"
@@ -131,8 +131,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="* Champs obligatoire"
-        app:layout_constraintStart_toStartOf="@+id/editTextAdresseMail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAdresseMail"
+        app:layout_constraintStart_toStartOf="@+id/editTextMail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMail"
         tools:text="Objet de Demande" />
 
     <Button
@@ -144,7 +144,7 @@
         android:layout_marginEnd="136dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="S'INSCRIRE"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAdresseMail"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMail"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

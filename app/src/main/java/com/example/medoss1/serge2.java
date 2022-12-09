@@ -19,13 +19,14 @@ public class serge2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_serge2);
         btnSerge22 = findViewById(R.id.btnSerge22);
+        btnSerge21 = findViewById(R.id.btnSerge21);
+
         clicFrame();
-
-
+        clicFrame3();
 
     }
 
-    private void clicFrame(){
+    private void clicFrame() {
 
         btnSerge22.setOnClickListener(new View.OnClickListener() { // Gestion du clic avec le listener
             @Override
@@ -34,4 +35,32 @@ public class serge2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-}}
+    }
+
+//}
+
+
+///   ici jai place le deuxieme Bouton "Mes disponibilites"
+
+
+    public void clicFrame3() {
+        btnSerge21.setOnClickListener(new View.OnClickListener() { // Gestion du clic avec le listener
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(serge2.this, MesDispo.class);
+                startActivity(intent);
+
+            }
+        });
+    }
+
+}
+
+
+
+
+
+
+
+
+

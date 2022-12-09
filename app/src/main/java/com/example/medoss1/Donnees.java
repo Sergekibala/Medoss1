@@ -2,7 +2,7 @@ package com.example.medoss1;
 
 public class Donnees {
 
-    String id, nom, prenom, codeTradP, categorie, adresseComplete,
+    String id, nom, prenom, codeTradiP, categorie, adresseComplete,
             codePostal, specialite, mail;
 
 
@@ -17,7 +17,7 @@ public class Donnees {
     }
 
     public Donnees(String id, String nom, String prenom,
-                   String codeTradP, String categorie, String
+                   String codeTradiP, String categorie, String
                    adresseComplete, String codePostal, String
                    specialite, String mail) {
 
@@ -25,7 +25,7 @@ public class Donnees {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        this.codeTradP = codeTradP;
+        this.codeTradiP = codeTradiP;
         this.categorie = categorie;
         this.adresseComplete = adresseComplete;
         this.codePostal = codePostal;
@@ -59,11 +59,11 @@ public class Donnees {
     }
 
     public String getCodeTradP() {
-        return codeTradP;
+        return codeTradiP;
     }
 
     public void setCodeTradP(String codeTradP) {
-        this.codeTradP = codeTradP;
+        this.codeTradiP = codeTradP;
     }
 
     public String getCategorie() {

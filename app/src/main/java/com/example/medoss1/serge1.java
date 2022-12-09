@@ -23,11 +23,20 @@ public class serge1 extends AppCompatActivity {
     private Button btnSerge1;
     private FirebaseFirestore db;
 
-    private EditText editTextNom, editTextPrenom;
+    private EditText editTextNom, editTextPrenom, editTextCodeTradiP,
+    editTextCategorie, editTextAdresseComplete, editTextCodePostal,
+    editTextSpecialite, editTextMail;
 
     private void  initUI(){
         editTextNom=findViewById(R.id.editTextNom);
         editTextPrenom=findViewById(R.id.editTextPrenom);
+        editTextCodeTradiP=findViewById(R.id.editTextCodeTradiP);
+        editTextCategorie=findViewById(R.id.editTextCategorie);
+        editTextAdresseComplete=findViewById(R.id.editTextAdresseComplete);
+        editTextCodePostal=findViewById(R.id.editTextCodePostal);
+        editTextSpecialite=findViewById(R.id.editTextSpecialite);
+        editTextMail=findViewById(R.id.editTextMail);
+
     }
 
 
@@ -46,9 +55,19 @@ public class serge1 extends AppCompatActivity {
     private void createUserInFirestore() {
         String nom = editTextNom.getText().toString();
         String prenom = editTextPrenom.getText().toString();
+        String codeTradiP = editTextCodeTradiP.getText().toString();
+        String categorie = editTextCategorie.getText().toString();
+        String adresseComplete = editTextAdresseComplete.getText().toString();
+        String codePostal = editTextCodePostal.getText().toString();
+        String specialite = editTextSpecialite.getText().toString();
+        String mail = editTextMail.getText().toString();
+
+
+
         String id = UUID.randomUUID().toString(); // Ici tu remplaceras par le userId de l'utilisateur courant obtneu dans Authenticator
 
-        Donnees myDataToFirestore = new Donnees(id, nom, prenom);
+        Donnees myDataToFirestore = new Donnees(id, nom, prenom, codeTradiP
+        , categorie, adresseComplete, codePostal, specialite, mail);
 
         db.collection("Users").document(id).set(myDataToFirestore)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
